@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">SabKuchApp</string>
+    <string name="Rs">Rs</string>
+    <string name="search">Search cloths, mobile, etc…</string>
+    <string name="v_commerce">SAB KUCH</string>
+    <string name="fashion">Fashion</string>
+    <string name="mens_wear">Mens Wear</string>
+    <string name="womens_wear">Womens Wear</string>
+    <string name="jewell">Jewellery</string>
+    <string name="sports">Sports</string>
+    <string name="bags">Bags</string>
+    <string name="mobiles_and_elec">Mobile and Electronics</string>
+    <string name="home_deco">Home Decorations</string>
+    <string name="search_mobile">Search : Mobile Category</string>
+    <string name="sort">SORT BY</string>
+    <string name="enter_mobile">Enter Mobile Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="your_mobile">Your mobile number will be linked with \n rushabhpatel381@gmail.com</string>
+    <string name="otp">OTP Verification</string>
+    <string name="_954_will_be_linked">9549990169  will be linked with \nrushabhpatel381@gmail.com</string>
+    <string name="edit_phone">Edit Phone number</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="we_are_verifying">We are verifying your mobile number</string>
+    <string name="filter_by">Filter by Price Range</string>
+    <string name="go_by_brands">Go by Brands</string>
+    <string name="indias_leading">INDIA\'s Leading Ecommerce Platform</string>
+    <string name="login_gmail">Login With Gmail</string>
+    <string name="login_fb">Login With Facebook</string>
+    <string name="i_phone">I phone X (Black, 128GB) 6GB Ram with 500mAh...</string>
+    <string name="_60">60,999</string>
+    <string name="save">Save 60%</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
 </resources>
