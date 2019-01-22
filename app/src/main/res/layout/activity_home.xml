@@ -54,7 +54,7 @@
                 android:background="@color/white"
                 android:orientation="vertical">
 
-                <customfonts.MyTextView_Roboto_Medium
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18.5sp"
@@ -86,12 +86,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/mens_wear"
                             android:textColor="@color/black"
@@ -116,12 +116,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/womens_wear"
                             android:textColor="@color/black"
@@ -146,12 +146,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/jewell"
                             android:textColor="@color/black"
@@ -176,12 +176,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/sports"
                             android:textColor="@color/black"
@@ -213,12 +213,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/bags"
                             android:textColor="@color/black"
@@ -327,7 +327,7 @@
                 android:background="@color/white"
                 android:orientation="vertical">
 
-                <customfonts.MyTextView_Roboto_Medium
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18.5sp"
@@ -357,12 +357,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/mens_wear"
                             android:textColor="@color/black"
@@ -386,12 +386,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/womens_wear"
                             android:textColor="@color/black"
@@ -415,12 +415,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/jewell"
                             android:textColor="@color/black"
@@ -444,12 +444,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/sports"
                             android:textColor="@color/black"
@@ -481,12 +481,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/bags"
                             android:textColor="@color/black"
@@ -510,12 +510,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/womens_wear"
                             android:textColor="@color/black"
@@ -539,12 +539,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/jewell"
                             android:textColor="@color/black"
@@ -568,12 +568,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/sports"
                             android:textColor="@color/black"
@@ -592,7 +592,7 @@
                 android:background="@color/white"
                 android:orientation="vertical">
 
-                <customfonts.MyTextView_Roboto_Medium
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18.5sp"
@@ -622,12 +622,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/mens_wear"
                             android:textColor="@color/black"
@@ -651,12 +651,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/womens_wear"
                             android:textColor="@color/black"
@@ -680,12 +680,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/jewell"
                             android:textColor="@color/black"
@@ -710,12 +710,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/sports"
                             android:textColor="@color/black"
@@ -748,12 +748,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/bags"
                             android:textColor="@color/black"
@@ -778,12 +778,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/womens_wear"
                             android:textColor="@color/black"
@@ -808,12 +808,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/jewell"
                             android:textColor="@color/black"
@@ -837,12 +837,12 @@
                             app:civ_border_color="@color/circular_pic_border"
                             app:civ_border_width="1dp" />
 
-                        <customfonts.MyTextView_Roboto_Medium
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/sports"
                             android:textColor="@color/black"

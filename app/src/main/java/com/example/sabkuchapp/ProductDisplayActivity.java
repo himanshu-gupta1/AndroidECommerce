@@ -38,9 +38,8 @@ public class ProductDisplayActivity extends AppCompatActivity {
 
         client = new OkHttpClient.Builder().build();
 
-        retrofit=AppController.retrofit;
 
-        api = retrofit.create(IApiClass.class);
+        api = AppController.retrofit.create(IApiClass.class);
 
         rv_product_list.setLayoutManager(new GridLayoutManager(ProductDisplayActivity.this,2));
         addData();

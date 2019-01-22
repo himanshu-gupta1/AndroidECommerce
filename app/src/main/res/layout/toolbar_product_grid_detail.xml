@@ -16,7 +16,7 @@
         android:layout_marginLeft="8.8dp"
         android:src="@drawable/ic_left_arrow" />
 
-    <customfonts.TextViewSFProDisplayMedium
+    <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

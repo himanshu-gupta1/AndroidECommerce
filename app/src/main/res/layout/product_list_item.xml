@@ -48,7 +48,7 @@
                         android:orientation="vertical">
 
 
-                        <customfonts.TextViewSFProDisplayRegular
+                        <TextView
                             android:id="@+id/tv_prodName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                             android:orientation="horizontal">
 
 
-                            <customfonts.MyTextView_Roboto_Bold
+                            <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/Rs"
@@ -72,7 +72,7 @@
                                 android:textSize="13.3sp"
                                 android:textStyle="bold" />
 
-                            <customfonts.MyTextView_Roboto_Bold
+                            <TextView
                                 android:id="@+id/tv_salePrice"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                                 android:textSize="13.3sp"
                                 android:textStyle="bold" />
 
-                            <customfonts.TextViewSFProDisplayMedium
+                            <TextView
                                 android:id="@+id/tv_price"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
 
                 </LinearLayout>
 
-                <customfonts.TextViewSFProDisplayMedium
+                <TextView
                     android:id="@+id/text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
