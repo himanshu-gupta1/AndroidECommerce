@@ -1,4 +1,5 @@
-<RelativeLayout android:background="#e1e1e1"
+<RelativeLayout
+    android:background="@drawable/backgroundnew"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -13,6 +14,7 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:text="Total : "
+            android:textColor="@color/white"
             android:textSize="20dp">
         </TextView>
 
@@ -22,6 +24,7 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:text="0 "
+            android:textColor="@color/white"
             android:drawableRight="@drawable/rupee"
             android:paddingLeft="32dp"
             android:textSize="20dp">
@@ -46,7 +49,8 @@
         android:layout_width="match_parent"
         android:onClick="insertOrder"
         android:text="Place Order"
-        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/black"
+        android:textColor="@color/black"
         android:theme="@style/Theme.MaterialButton">
     </Button>
 
