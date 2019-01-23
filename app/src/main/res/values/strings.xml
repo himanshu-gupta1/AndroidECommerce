@@ -44,6 +44,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="user_review">User Reviews</string>
     <string name="thankyou">Thank You!</string>
     <string name="thankyou_message_1">Thankyou for shopping with us! </string>
     <string name="thankyou_message_2">A confirmation Email has been sent to your mail. Please check it.</string>
