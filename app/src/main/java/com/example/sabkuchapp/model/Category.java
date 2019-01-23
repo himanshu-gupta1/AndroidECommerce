@@ -6,11 +6,22 @@ import com.google.gson.annotations.SerializedName;
 
 public class Category{
 
+	@SerializedName("categoryImageUrl")
+	private String categoryImageUrl;
+
 	@SerializedName("categoryName")
 	private String categoryName;
 
 	@SerializedName("categoryId")
 	private String categoryId;
+
+	public void setCategoryImageUrl(String categoryImageUrl){
+		this.categoryImageUrl = categoryImageUrl;
+	}
+
+	public String getCategoryImageUrl(){
+		return categoryImageUrl;
+	}
 
 	public void setCategoryName(String categoryName){
 		this.categoryName = categoryName;
@@ -32,7 +43,8 @@ public class Category{
  	public String toString(){
 		return 
 			"Category{" + 
-			"categoryName = '" + categoryName + '\'' + 
+			"categoryImageUrl = '" + categoryImageUrl + '\'' + 
+			",categoryName = '" + categoryName + '\'' + 
 			",categoryId = '" + categoryId + '\'' + 
 			"}";
 		}

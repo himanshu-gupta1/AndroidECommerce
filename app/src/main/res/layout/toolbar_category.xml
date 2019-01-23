@@ -10,6 +10,7 @@
     app:contentInsetRight="0dp"
     app:contentInsetStart="0dp"
     android:paddingBottom="5dp"
+    android:id="@+id/tb_search"
     >
 
     <LinearLayout
@@ -42,28 +43,29 @@
         android:text="@string/v_commerce"
         android:textColor="@color/black" />
 
-        <ImageView
-            android:layout_toLeftOf="@id/iv_cart"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+        <!--<ImageView-->
+            <!--android:layout_toLeftOf="@id/iv_cart"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
 
-            android:background="@drawable/ic_notification"
-            />
+            <!--android:background="@drawable/ic_notification"-->
+            <!--/>-->
 
 
-        <ImageView
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:id="@+id/iv_cart"
-            android:layout_alignParentRight="true"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:background="@drawable/cart"
-            />
+        <!--<ImageView-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:id="@+id/iv_cart"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/cart"-->
+            <!--/>-->
 
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/ll_search"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -1,11 +1,12 @@
 package com.example.sabkuchapp.model;
 
+import java.util.List;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
+public class ProductResponse {
 
-
-public class ProductResponse{
+	@SerializedName("userReviews")
+	private List<UserReviewsItem> userReviews;
 
 	@SerializedName("subCategory")
 	private List<SubCategoryItem> subCategory;
@@ -30,6 +31,14 @@ public class ProductResponse{
 
 	@SerializedName("productName")
 	private String productName;
+
+	public void setUserReviews(List<UserReviewsItem> userReviews){
+		this.userReviews = userReviews;
+	}
+
+	public List<UserReviewsItem> getUserReviews(){
+		return userReviews;
+	}
 
 	public void setSubCategory(List<SubCategoryItem> subCategory){
 		this.subCategory = subCategory;
@@ -98,8 +107,9 @@ public class ProductResponse{
 	@Override
  	public String toString(){
 		return 
-			"ProductResponse{" + 
-			"subCategory = '" + subCategory + '\'' + 
+			"ProductResponse{" +
+			"userReviews = '" + userReviews + '\'' + 
+			",subCategory = '" + subCategory + '\'' + 
 			",usp = '" + usp + '\'' + 
 			",productImage = '" + productImage + '\'' + 
 			",productId = '" + productId + '\'' + 

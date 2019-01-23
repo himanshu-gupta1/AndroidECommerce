@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    android:paddingBottom="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.3dp"
+            android:layout_marginRight="10.7dp"
+            android:background="@drawable/round_corners"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_searchSuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17.3dp"
+                android:layout_weight="1"
+                android:textColorHint="#2b2b2b"
+                android:background="#00000000"
+                android:hint="@string/search"
+                android:textColor="#2b2b2b"
+                android:textSize="11.7dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12.8dp"
+                android:src="@drawable/search"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.Toolbar>

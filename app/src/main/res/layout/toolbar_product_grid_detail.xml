@@ -7,7 +7,9 @@
     app:contentInsetLeft="0dp"
     app:contentInsetStart="0dp"
     app:contentInsetRight="0dp"
-    app:contentInsetEnd="0dp">
+    app:contentInsetEnd="0dp"
+    android:id="@+id/tb_subCategorySearch"
+    >
 
 
     <ImageView
@@ -17,7 +19,7 @@
         android:src="@drawable/ic_left_arrow" />
 
     <customfonts.TextViewSFProDisplayMedium
-        android:id="@+id/title"
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="13.3sp"

@@ -3,11 +3,13 @@ package com.example.sabkuchapp.model;
 
 import com.google.gson.annotations.SerializedName;
 
-
 public class SubCategoryItem{
 
 	@SerializedName("subcategoryName")
 	private String subcategoryName;
+
+	@SerializedName("subcategoryImage")
+	private String subcategoryImage;
 
 	@SerializedName("subcategoryId")
 	private String subcategoryId;
@@ -21,6 +23,14 @@ public class SubCategoryItem{
 
 	public String getSubcategoryName(){
 		return subcategoryName;
+	}
+
+	public void setSubcategoryImage(String subcategoryImage){
+		this.subcategoryImage = subcategoryImage;
+	}
+
+	public String getSubcategoryImage(){
+		return subcategoryImage;
 	}
 
 	public void setSubcategoryId(String subcategoryId){
@@ -44,6 +54,7 @@ public class SubCategoryItem{
 		return 
 			"SubCategoryItem{" + 
 			"subcategoryName = '" + subcategoryName + '\'' + 
+			",subcategoryImage = '" + subcategoryImage + '\'' + 
 			",subcategoryId = '" + subcategoryId + '\'' + 
 			",category = '" + category + '\'' + 
 			"}";
