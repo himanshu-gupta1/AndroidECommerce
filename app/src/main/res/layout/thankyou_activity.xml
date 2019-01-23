@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+
+    <ImageView
+        android:id="@+id/thankyouPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/ThankyouPage"
+        app:layout_constraintBottom_toTopOf="@+id/message1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message1"
+        android:layout_width="391dp"
+        android:layout_height="42dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/thankyou"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/thankyouPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/message2"/>
+
+    <TextView
+        android:id="@+id/message2"
+        android:layout_height="88dp"
+        android:layout_margin="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:text="@string/thankyou_message_1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/message3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message1" />
+
+    <TextView
+        android:id="@+id/message3"
+        android:layout_width="378dp"
+        android:layout_height="127dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/thankyou_message_2"
+        android:textAlignment="inherit"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message2" />
+
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        app:layout_constraintTop_toBottomOf="@id/message3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/button_remove_edit"
+        android:padding="8dp"
+
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
