@@ -61,6 +61,7 @@
                     android:layout_marginTop="27sp"
                     android:text="@string/fashion"
                     android:textColor="@color/black"
+                    android:background="android:background="#66b3ff""
                     android:textSize="13.3dp" />
 
                 <LinearLayout
