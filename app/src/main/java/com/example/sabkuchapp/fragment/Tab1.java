@@ -77,10 +77,14 @@ public class Tab1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View view=inflater.inflate(R.layout.fragment_tab1, container, false);
         String productId=getActivity().getIntent().getStringExtra("productId");
-        tv_description=getActivity().findViewById(R.id.tv_description);
-        addData(productId);
-        return inflater.inflate(R.layout.fragment_tab1, container, false);
+        tv_description=view.findViewById(R.id.tv_description);
+        //System.out.println(tv_description);
+
+        System.out.println(productId);
+        //addData(productId);
+        return view;
 
     }
 
@@ -130,7 +134,7 @@ public class Tab1 extends Fragment {
             @Override
             public void onResponse(Call<ProductResponse> call, Response<ProductResponse> response) {
                 System.out.println(response.body());
-                tv_description.setText(response.body().getDescription());
+                tv_description.setText(response.body().getDescription()+"");
 
             }
 

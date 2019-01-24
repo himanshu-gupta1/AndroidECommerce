@@ -36,16 +36,41 @@
     </android.support.v7.widget.RecyclerView>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/btn_continueShopping"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_height="60dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="insertOrder"
+            android:text="ContinueShopping"
+            android:textColor="@android:color/white"
+            android:theme="@style/Theme.MaterialButton">
+        </Button>
+
     <Button
         android:id="@+id/btn_placeorder"
         android:layout_gravity="center"
-        android:layout_alignParentBottom="true"
         android:layout_height="60dp"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:onClick="insertOrder"
         android:text="Place Order"
         android:textColor="@android:color/white"
         android:theme="@style/Theme.MaterialButton">
     </Button>
+
+
+
+    </LinearLayout>
+
 
 </RelativeLayout>

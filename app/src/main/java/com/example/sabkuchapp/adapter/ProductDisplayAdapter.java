@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.sabkuchapp.AppController;
 import com.example.sabkuchapp.ProductListingActivity;
 import com.example.sabkuchapp.R;
@@ -113,9 +114,9 @@ public class ProductDisplayAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
             addPriceData(productResponse.getProductId());
 
-//            Glide.with(context)
-//                    .load(imageUrl)
-//                    .into(iv_image);
+            Glide.with(context)
+                    .load(productResponse.getProductImage())
+                    .into(iv_prodImage);
 
         }
 

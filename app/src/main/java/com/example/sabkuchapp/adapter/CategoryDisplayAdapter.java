@@ -75,6 +75,7 @@ public class CategoryDisplayAdapter extends RecyclerView.Adapter<RecyclerView.Vi
         private TextView tv_category;
         private RecyclerView rv_subCategory;
 
+
         public CategoryViewHolder(View itemView) {
             super(itemView);
             tv_category=itemView.findViewById(R.id.tv_category);

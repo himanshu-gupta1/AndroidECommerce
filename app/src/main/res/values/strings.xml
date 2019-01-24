@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SabKuchApp</string>
+    <string name="app_name"></string>
     <string name="Rs">Rs</string>
     <string name="search">Search cloths, mobile, etc…</string>
     <string name="v_commerce">SAB KUCH</string>
@@ -47,4 +47,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+
+    <string name="thankyou">Thank You!</string>
+    <string name="thankyou_message_1">Thankyou for shopping with us! </string>
+    <string name="thankyou_message_2">A confirmation Email has been sent to your mail. Please check it.</string>
 </resources>

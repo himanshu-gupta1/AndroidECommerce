@@ -3,13 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:icon="@drawable/ic_notification"
-        android:id="@+id/notification"
-        app:showAsAction="ifRoom"
-        android:title="Order History"
-        >
-    </item>
-    <item
         android:icon="@drawable/cart"
         android:id="@+id/cart"
         app:showAsAction="ifRoom"

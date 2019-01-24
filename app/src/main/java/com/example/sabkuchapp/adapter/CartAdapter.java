@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.sabkuchapp.AppController;
 import com.example.sabkuchapp.CartActivity;
@@ -41,11 +42,24 @@ public class CartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private IApiClass api1=retrofitProduct.create(IApiClass.class);
     private IApiClass api2=retrofitMerchant.create(IApiClass.class);
     private IApiClass api3=AppController.retrofitCart.create(IApiClass.class);
+    public static ClickListener clickListener;
 
 
     //private IRvAdapterCommunicator communicator;
 //    int flag=0;
 //    int cnt=0;
+
+
+    public interface ClickListener {
+        void onItemClick(int position, View v);
+        void onItemLongClick(int position, View v);
+    }
+
+
+
+    public void setOnItemClickListener(ClickListener clickListener) {
+        CartAdapter.clickListener = clickListener;
+    }
 
     public CartAdapter(List<CartProductResponse> cartProductResponseList, Context context) {
         this.cartProductResponseList = cartProductResponseList;
@@ -79,7 +93,7 @@ public class CartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
 
-    class CartViewHolder extends RecyclerView.ViewHolder {
+    class CartViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private ImageView productImage;
         private TextView productName;
         private TextView productPrice;
@@ -110,7 +124,7 @@ public class CartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             productQuantity.setText(cartProductResponse.getProductCount()+"");
 
             addProductData(cartProductResponse.getProductId());
-            addPriceData(cartProductResponse.getProductId(),cartProductResponse.getMerchantId());
+            addPriceData(cartProductResponse.getProductId(),cartProductResponse.getMerchantId(),cartProductResponse.getProductCount());
 
             productRemove.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -142,7 +156,7 @@ public class CartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                                 @Override
                                 public void onResponse(Call<Void> call, Response<Void> response) {
                                     System.out.println("product updated");
-                                    ((CartActivity)context).updateProduct(cartProductResponse.getProductId());
+                                    ((CartActivity)context).updateProduct1(cartProductResponse.getProductId());
                                 }
 
                                 @Override
@@ -164,8 +178,63 @@ public class CartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             });
 
 
+            minusButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    if(cartProductResponse.getProductCount()>1) {
+                        final Cart cart = new Cart();
+                        final CartProductUpdate cartProductUpdate = new CartProductUpdate();
+                        cartProductUpdate.setProductId(cartProductResponse.getProductId());
+                        cartProductUpdate.setProductCount(cartProductResponse.getProductCount() - 1 + "");
+                        cartProductUpdate.setMerchantId(cartProductResponse.getMerchantId());
+                        cartProductUpdate.setCartProductId(cartProductResponse.getCartProductId());
+                        Call<String> call = api3.getCartId("4b726cbf-a5a1-4118-9d71-a239508b5172");
+                        call.enqueue(new Callback<String>() {
+                            @Override
+                            public void onResponse(Call<String> call, Response<String> response) {
+                                cart.setCartId(response.body());
+                                cartProductUpdate.setCart(cart);
+                                Call<Void> call1 = api3.updateCart(cartProductUpdate);
+                                call1.enqueue(new Callback<Void>() {
+                                    @Override
+                                    public void onResponse(Call<Void> call, Response<Void> response) {
+                                        System.out.println("product updated");
+                                        ((CartActivity) context).updateProduct2(cartProductResponse.getProductId());
+                                    }
+
+                                    @Override
+                                    public void onFailure(Call<Void> call, Throwable t) {
+
+                                    }
+                                });
+                            }
+
+                            @Override
+                            public void onFailure(Call<String> call, Throwable t) {
+
+                            }
+                        });
+
+
+                        api3.updateCart(cartProductUpdate);
+                    }
+                    else
+                    {
+                        Toast.makeText(context,"you cant, decrease the quantity furthur",Toast.LENGTH_SHORT).show();
+                    }
+
+                }
+            });
+
+
+
+
+
 
         }
+
+
 
 
 
@@ -195,13 +264,13 @@ public class CartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
 
 
-        public void addPriceData(String productId,String merchant_id)
+        public void addPriceData(String productId,String merchant_id,final int count)
         {
             Call<MerchantProductResponse> call=api2.getMerchantProduct(productId,merchant_id);
             call.enqueue(new Callback<MerchantProductResponse>() {
                 @Override
                 public void onResponse(Call<MerchantProductResponse> call, Response<MerchantProductResponse> response) {
-                    productPrice.setText(response.body().getSalePrice()+"");
+                    productPrice.setText((count*response.body().getSalePrice())+"");
 
                 }
 
@@ -214,6 +283,11 @@ public class CartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
 
 
+        @Override
+        public void onClick(View view) {
+              clickListener.onItemClick(getAdapterPosition(),view);
+
+        }
     }
 
 

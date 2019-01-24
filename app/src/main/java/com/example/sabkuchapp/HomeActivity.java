@@ -7,7 +7,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import com.example.sabkuchapp.Rest.IApiClass;
@@ -32,20 +34,25 @@ public class HomeActivity extends AppCompatActivity {
     private IApiClass api;
     private List<Category> categoryList;
     private CategoryDisplayAdapter categoryDisplayAdapter;
+    private EditText et_search;
+    private EditText et_clickon2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
        // temp=findViewById(R.id.temp);
         tb_search=findViewById(R.id.tb_search);
+        et_clickon2=findViewById(R.id.et_clickon2);
         rv_category=findViewById(R.id.rv_category);
         setSupportActionBar(tb_search);
+        //getActionBar().setTitle("nhv");
 
         client = new OkHttpClient.Builder().build();
 
         retrofit=AppController.retrofitProduct;
         ll_search=findViewById(R.id.ll_search);
 
+       // et_search=findViewById(R.id.et_search);
         api = retrofit.create(IApiClass.class);
         rv_category.setLayoutManager(new LinearLayoutManager(HomeActivity.this));
         addData();
@@ -69,6 +76,24 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,ProductSearchActivity.class));
             }
         });
+
+        et_clickon2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,ProductSearchActivity.class));
+            }
+        });
+
+
+
+//        et_search.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                startActivity(new Intent(HomeActivity.this,ProductSearchActivity.class));
+//
+//            }
+//        });
 
 
     }
@@ -107,4 +132,25 @@ public class HomeActivity extends AppCompatActivity {
         return true;
 
     }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        System.out.println("hello");
+        switch (item.getItemId())
+        {
+            case R.id.login:
+                startActivity(new Intent(HomeActivity.this,LoginActivity.class));
+                break;
+            case R.id.cart:
+                startActivity(new Intent(HomeActivity.this,CartActivity.class));
+                break;
+            case R.id.order_history:
+                startActivity(new Intent(HomeActivity.this,OrderHistoryActivity.class));
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }

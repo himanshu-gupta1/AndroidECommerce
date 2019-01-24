@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.sabkuchapp.ProductDisplayActivity;
 import com.example.sabkuchapp.R;
 import com.example.sabkuchapp.Rest.IApiClass;
@@ -90,9 +91,9 @@ public class SubCategoryDisplayAdapter extends RecyclerView.Adapter<RecyclerView
                     context.startActivity(intent);
                 }
             });
-//            Glide.with(context)
-//                    .load(imageUrl)
-//                    .into(iv_image);
+            Glide.with(context)
+                    .load(subCategoryItem.getSubcategoryImage())
+                    .into(iv_subCategory);
 
         }
 

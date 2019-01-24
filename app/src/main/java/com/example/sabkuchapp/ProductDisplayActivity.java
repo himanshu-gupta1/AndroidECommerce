@@ -1,10 +1,13 @@
 package com.example.sabkuchapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.sabkuchapp.Rest.IApiClass;
@@ -32,6 +35,7 @@ public class ProductDisplayActivity extends AppCompatActivity {
     private List<ContentItem> productResponseList;
     private String subCategory;
     private Toolbar tb_subCategorySearch;
+    private ImageView iv_cart;
 
 //    List<Integer> salePrice;
 //    List<Integer> price;
@@ -44,6 +48,7 @@ public class ProductDisplayActivity extends AppCompatActivity {
         rv_product_list=findViewById(R.id.rv_product_list);
         tb_subCategorySearch=findViewById(R.id.tb_subCategorySearch);
         TextView title=tb_subCategorySearch.findViewById(R.id.tv_title);
+        iv_cart=findViewById(R.id.iv_cart);
 
 
         client = new OkHttpClient.Builder().build();
@@ -78,6 +83,13 @@ public class ProductDisplayActivity extends AppCompatActivity {
 //            }
 //        });
 
+        iv_cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProductDisplayActivity.this,CartActivity.class));
+            }
+        });
+
     }
 
 
@@ -89,6 +101,7 @@ public class ProductDisplayActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<ContentItem>> call, Response<List<ContentItem>> response) {
                // System.out.println(response.body());
+                System.out.println(response.body());
                 productResponseList=response.body();
                 //get the price from each product...
 //                for(ContentItem contentItem:productResponseList)
